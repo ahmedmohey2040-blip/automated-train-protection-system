@@ -1,37 +1,39 @@
 # Automated Train Protection System (Front-Obstacle Detection)
 
-**Trains Protection System from Front Obstacles**
+**Official Project Title:** Trains Protection System from Front Obstacles
 
-A railway safety prototype developed to detect obstacles in front of a train and provide automated warning and stopping functions to reduce the risk of collisions.
+A railway safety prototype developed to detect obstacles in front of a train and provide automated warning and model-train stopping functions to reduce the risk of collisions.
 
 ## Project Overview
 
-The project presents an academic prototype for protecting train movement from obstacles located on the railway track. The system uses an ultrasonic sensor installed at the front of the locomotive model to detect obstacles ahead.
+The project presents an academic prototype for protecting train movement from obstacles located on the railway track.
 
-When an obstacle is detected within the defined detection range, the system provides warning indications and can activate the braking mechanism of the model train through an H-Bridge motor control circuit.
+The system uses an ultrasonic sensor installed at the front of the locomotive model to detect obstacles ahead. When an obstacle is detected according to the predefined conditions of the prototype, the system provides visual and audible warnings and can activate the motor control circuit to stop the model train.
 
-The project also includes a railway signaling model using infrared (IR) sensors to control the sequence of railway signals as the train moves along the track.
+The project also includes a railway signaling model based on infrared (IR) sensors. The IR sensors detect the movement of the train through different sections of the track and control the sequence of railway semaphore indications.
+
+The project demonstrates the integration of obstacle detection, microcontrollers, motor control, railway signaling, and warning systems within an academic railway model.
 
 ## Project Objectives
 
 - Detect obstacles located in front of the train.
-- Provide early warning when an obstacle is detected.
-- Automatically control the movement of the model train according to the detected obstacle.
+- Provide visual and audible warnings when an obstacle is detected.
+- Control the movement of the model train according to the detected obstacle condition.
 - Demonstrate an emergency stopping function using an H-Bridge motor control circuit.
 - Implement a railway signal sequence using IR sensors.
-- Improve the safety concept of railway operation through automated monitoring and warning.
-- Demonstrate the integration of sensors, microcontrollers, railway signals, and motor control in an academic railway model.
+- Demonstrate automated monitoring and warning for railway movement protection.
+- Integrate sensors, microcontrollers, railway signals, and motor control in an academic railway model.
 
 ## System Description
 
 The prototype consists of two main sections:
 
-1. **Train / Locomotive System**
+1. **Train / Locomotive Protection System**
 2. **Railway Track and Signaling System**
 
 The locomotive uses an Arduino Uno to process the ultrasonic sensor data and control the warning and motor functions.
 
-The railway track uses an Arduino Mega to process the IR sensors and control the railway signals and station warning devices.
+The railway track uses an Arduino Mega to process the IR sensor inputs and control the railway signals and station warning devices.
 
 ## Main Components
 
@@ -68,19 +70,19 @@ The ultrasonic sensor is installed at the front of the locomotive model.
 
 The sensor sends ultrasonic waves toward the railway path and receives the reflected waves from objects in front of the train.
 
-The distance to the detected obstacle is calculated from the time taken for the ultrasonic wave to travel to the obstacle and return to the sensor.
+The distance to the detected obstacle is calculated based on the time required for the ultrasonic wave to travel to the obstacle and return to the sensor.
 
 The basic distance relationship is:
 
 `Distance = (Speed × Time) / 2`
 
-where the division by two accounts for the outgoing and returning path of the ultrasonic wave.
+The division by two accounts for the outgoing and returning path of the ultrasonic wave.
 
 ### 2. Warning and Train Protection
 
-When an obstacle is detected, the system provides visual and audible warnings using LEDs and a buzzer.
+When an obstacle is detected according to the programmed conditions, the system provides visual and audible warnings using LEDs and a buzzer.
 
-According to the defined conditions in the prototype, the control system can activate the motor control circuit to stop the model train when the obstacle remains within the danger condition.
+When the obstacle reaches the defined danger condition, the control system can activate the H-Bridge motor control circuit to stop the model train.
 
 ### 3. Railway Signal Sequence
 
@@ -88,7 +90,7 @@ IR sensors are installed along the railway model to detect the movement of the t
 
 The sensors are used to control the sequence of the railway semaphores.
 
-The model includes green, yellow, and red signal indications to represent different railway movement conditions.
+The model includes green, yellow, and red signal indications representing different railway movement conditions.
 
 ### 4. Station Warning System
 
@@ -114,7 +116,7 @@ The Arduino Uno is installed on the locomotive model and is responsible for:
 
 The Arduino Mega is installed on the railway track model and is responsible for:
 
-- Processing the IR sensor inputs.
+- Processing IR sensor inputs.
 - Controlling railway semaphore indications.
 - Managing the signal sequence.
 - Controlling the station warning LEDs and buzzer.
@@ -152,12 +154,12 @@ This provides an academic demonstration of automated railway signaling and train
 ### Software
 
 - Arduino IDE
-- Arduino programming
-- Embedded control logic
+- Arduino Programming
+- Embedded Control Logic
 
 ## Project Development
 
-The prototype was developed through several stages, including:
+The prototype was developed through several stages:
 
 1. Designing the railway model layout.
 2. Preparing and painting the track base.
@@ -167,7 +169,7 @@ The prototype was developed through several stages, including:
 6. Installing the ultrasonic obstacle detection system.
 7. Connecting the Arduino Uno and Arduino Mega.
 8. Implementing the motor control circuit.
-9. Programming the signal sequence.
+9. Programming the railway signal sequence.
 10. Integrating the complete system and testing its operation.
 
 ## Project Features
@@ -176,7 +178,7 @@ The prototype was developed through several stages, including:
 - Real-time obstacle monitoring.
 - Visual warning indications.
 - Audible warning using a buzzer.
-- Automated model train stopping function.
+- Model train stopping function.
 - IR-based railway signal sequencing.
 - Arduino-based control.
 - Integration of train protection and railway signaling concepts.
@@ -188,7 +190,7 @@ The current prototype focuses on obstacle detection on straight railway sections
 Future development may include:
 
 - Improving obstacle detection performance.
-- Extending the system to railway curves.
+- Extending the system to railway curves and different track layouts.
 - Improving detection under different environmental conditions.
 - Developing more advanced train braking control.
 - Integrating additional railway communication and monitoring technologies.
@@ -198,7 +200,7 @@ Future development may include:
 
 **Project Title:** Automated Train Protection System (Front-Obstacle Detection)
 
-**Original Project Title:** Trains Protection System from Front Obstacles
+**Official Project Title:** Trains Protection System from Front Obstacles
 
 **Institution:** Higher Institute for Transport Technology (HITT)
 
